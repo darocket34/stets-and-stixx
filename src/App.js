@@ -1,24 +1,27 @@
 import './App.css';
-import Nav from './Components/Navigation/Nav';
-import About from './Components/About/About';
-import Home from './Components/Home/Home'
-import { Route, Routes } from 'react-router-dom';
+import Nav from './components/Navigation';
+import About from './components/About/';
+import Home from './components/Home';
+import Events from './components/Events';
+import Connect from './components/Connect';
+import Pricing from './components/Pricing'
+import NotFound from './components/NotFound';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
 
   return (
-    <>
-      <Nav>
+      <BrowserRouter>
+        <Nav />
         <Routes>
-          <Route exact path='/'>
-            <Home />
-          </Route>
-          <Route exact path='/about'>
-            <About />
-          </Route>
+            <Route index element={<Home />} />
+            <Route path='about' element={<About />} />
+            <Route path='events' element={<Events />} />
+            <Route path='pricing' element={<Pricing />} />
+            <Route path='connect' element={<Connect />} />
+            <Route path='*' element={<NotFound />} />
         </Routes>
-      </Nav>
-    </>
+      </BrowserRouter>
   );
 }
 
