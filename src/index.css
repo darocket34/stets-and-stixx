@@ -1,3 +1,13 @@
+/* ! Important! Remove when all pages completed */
+div.coming.soon {
+  text-align: center;
+}
+/* ! ___________________________________________ */
+
+
+
+
+
 * {
   box-sizing: border-box;
 }
@@ -25,7 +35,5 @@ code {
 }
 
 div#curator-feed-default-feed-layout {
-  align-self: center;
-  max-width: 1033px;
-  margin: 100px;
+  margin-top: 150px;
 }

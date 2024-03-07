@@ -1,10 +1,9 @@
 function Connect() {
     return (
         <>
-            <p> Connect coming soon...</p>
-            <p> Connect coming soon...</p>
-            <p> Connect coming soon...</p>
-            <p> Connect coming soon...</p>
+            <div className="coming soon">
+                <h1>Coming soon...</h1>
+            </div>
         </>
     )
 }

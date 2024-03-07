@@ -24,48 +24,51 @@ const Footer = () => {
         };
       }, []);
     return (
-        <Box>
-            <div id="curator-feed-default-feed-layout"></div>
-            <FooterContainer>
-                <Row>
-                    <Column>
-                        <FooterLink href="#">
-                            <i className="fab fa-facebook">
-                                <span
-                                    style={{
-                                        marginLeft: "10px",
-                                    }}
-                                >
-                                    Facebook
-                                </span>
-                            </i>
-                        </FooterLink>
-                        <FooterLink href="#">
-                            <i className="fab fa-instagram">
-                                <span
-                                    style={{
-                                        marginLeft: "10px",
-                                    }}
-                                >
-                                    Instagram
-                                </span>
-                            </i>
-                        </FooterLink>
-                        <FooterLink href="#">
-                        <i class="fa-solid fa-at">
-                                <span
-                                    style={{
-                                        marginLeft: "10px",
-                                    }}
-                                >
-                                    Email
-                                </span>
-                            </i>
-                        </FooterLink>
-                    </Column>
-                </Row>
-            </FooterContainer>
-        </Box>
+        <div className="footer container">
+            <Box>
+                <div id="curator-feed-default-feed-layout"></div>
+                <FooterContainer>
+                    <Row>
+                        <Column>
+                            <FooterLink href="#">
+                                <i className="fab fa-facebook">
+                                    <span
+                                        style={{
+                                            marginLeft: "10px",
+                                        }}
+                                    >
+                                        Facebook
+                                    </span>
+                                </i>
+                            </FooterLink>
+                            <FooterLink href="#">
+                                <i className="fab fa-instagram">
+                                    <span
+                                        style={{
+                                            marginLeft: "10px",
+                                        }}
+                                    >
+                                        Instagram
+                                    </span>
+                                </i>
+                            </FooterLink>
+                            <FooterLink href="#">
+                            <i className="fa-solid fa-at">
+                                    <span
+                                        style={{
+                                            marginLeft: "10px",
+                                        }}
+                                    >
+                                        Email
+                                    </span>
+                                </i>
+                            </FooterLink>
+                        </Column>
+                    </Row>
+                </FooterContainer>
+            </Box>
+        </div>
+
     );
 };
 

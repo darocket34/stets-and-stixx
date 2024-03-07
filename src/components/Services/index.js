@@ -1,10 +1,9 @@
 function Services() {
     return (
         <>
-            <p> Services coming soon...</p>
-            <p> Services coming soon...</p>
-            <p> Services coming soon...</p>
-            <p> Services coming soon...</p>
+            <div className="coming soon">
+                <h1>Coming soon...</h1>
+            </div>
         </>
     )
 }

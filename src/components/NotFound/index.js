@@ -1,10 +1,9 @@
 function NotFound() {
     return (
         <>
-            <p> NotFound coming soon...</p>
-            <p> NotFound coming soon...</p>
-            <p> NotFound coming soon...</p>
-            <p> NotFound coming soon...</p>
+            <div className="coming soon">
+                <h1>Coming soon...</h1>
+            </div>
         </>
     )
 }
