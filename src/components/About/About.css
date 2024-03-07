@@ -1,0 +1,45 @@
+p {
+    color: white;
+    max-width: 950px;
+    opacity: unset;
+    width: 100%;
+}
+
+p#signature {
+    color: #e1ba66;
+    font-size: large;
+}
+
+h1 {
+    color: #e1ba66;
+}
+
+img#stetsbg {
+    height: auto;
+    left: 50%;
+    max-width: 1033px;
+    opacity: 20%;
+    position: absolute;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+div.home.container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+
+}
+
+div.master {
+    align-content: center;
+    display: block;
+    position: relative;
+    margin: auto;
+    width: 80%;
+}

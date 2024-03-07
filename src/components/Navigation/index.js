@@ -9,7 +9,7 @@ export default function Nav() {
         <div className="navbar container">
             <div className="logo container">
                 <NavLink to='/'>
-                    <img to="/" className="logo" src={stetsandstixx} alt="Stets and Sticks Logo"/>
+                    <img to="/" id="logo" src={stetsandstixx} alt="Stets and Sticks Logo"/>
                 </NavLink>
             </div>
             <NavTabs />

@@ -77,8 +77,8 @@ export default function NavTabs() {
       >
         <LinkTab label="Home" href="/" />
         <LinkTab label="About" href="/about"/>
-        <LinkTab label="Events" href="/events" />
-        <LinkTab label="Pricing" href="/pricing" />
+        <LinkTab label="Services" href="/services" />
+        {/* <LinkTab label="Pricing" href="/pricing" /> */}
         <LinkTab label="Connect" href="/connect" />
       </StyledTabs>
     </Box>
