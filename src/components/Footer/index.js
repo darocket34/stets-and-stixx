@@ -7,7 +7,19 @@ import {
     FooterLink,
     Heading,
 } from "./FooterStyles";
+import { styled } from '@mui/material';
 import "./Footer.css"
+
+
+// const StyledFooterContainer = styled((props) => <FooterContainer {...props}/>)(
+//     ({ theme }) => ({
+//       display: 'flex',
+//       flexDirection: 'row',
+//       fontFamily: theme.typography.fontFamily,
+//       justifyContent: 'center',
+//       gap: 30
+//   })
+// );
 
 const Footer = () => {
     useEffect(() => {
@@ -24,12 +36,10 @@ const Footer = () => {
         };
       }, []);
     return (
-        <div className="footer container">
+        // <div className="footer container">
             <Box>
                 <div id="curator-feed-default-feed-layout"></div>
                 <FooterContainer>
-                    <Row>
-                        <Column>
                             <FooterLink href="#">
                                 <i className="fab fa-facebook">
                                     <span
@@ -63,11 +73,9 @@ const Footer = () => {
                                     </span>
                                 </i>
                             </FooterLink>
-                        </Column>
-                    </Row>
                 </FooterContainer>
             </Box>
-        </div>
+        // </div>
 
     );
 };

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Box = styled.div`
-    
     padding: 5% 2.5%;
     background: black;
     // position: absolute;
@@ -14,7 +13,8 @@ export const Box = styled.div`
 
 export const FooterContainer = styled.div`
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 10vh;
     justify-content: center;
     max-width: 1000px;
     margin: 0 auto;
