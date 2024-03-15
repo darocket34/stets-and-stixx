@@ -14,8 +14,7 @@ export const Box = styled.div`
 export const FooterContainer = styled.div`
     display: flex;
     flex-direction: row;
-    gap: 10vh;
-    justify-content: center;
+    justify-content: start;
     max-width: 1000px;
     margin: 0 auto;
     background: black;

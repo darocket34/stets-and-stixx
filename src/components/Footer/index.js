@@ -2,26 +2,14 @@ import React, { useEffect } from "react";
 import {
     Box,
     FooterContainer,
-    Row,
-    Column,
     FooterLink,
     Heading,
 } from "./FooterStyles";
-import { styled } from '@mui/material';
 import "./Footer.css"
 
 
-// const StyledFooterContainer = styled((props) => <FooterContainer {...props}/>)(
-//     ({ theme }) => ({
-//       display: 'flex',
-//       flexDirection: 'row',
-//       fontFamily: theme.typography.fontFamily,
-//       justifyContent: 'center',
-//       gap: 30
-//   })
-// );
-
 const Footer = () => {
+
     useEffect(() => {
         // Load Curator.io script
         const script = document.createElement('script');
@@ -35,45 +23,56 @@ const Footer = () => {
           document.body.removeChild(script);
         };
       }, []);
+
     return (
         // <div className="footer container">
             <Box>
                 <div id="curator-feed-default-feed-layout"></div>
-                <FooterContainer>
-                            <FooterLink href="#">
-                                <i className="fab fa-facebook">
-                                    <span
-                                        style={{
-                                            marginLeft: "10px",
-                                        }}
-                                    >
-                                        Facebook
-                                    </span>
-                                </i>
-                            </FooterLink>
-                            <FooterLink href="#">
-                                <i className="fab fa-instagram">
-                                    <span
-                                        style={{
-                                            marginLeft: "10px",
-                                        }}
-                                    >
-                                        Instagram
-                                    </span>
-                                </i>
-                            </FooterLink>
-                            <FooterLink href="#">
-                            <i className="fa-solid fa-at">
-                                    <span
-                                        style={{
-                                            marginLeft: "10px",
-                                        }}
-                                    >
-                                        Email
-                                    </span>
-                                </i>
-                            </FooterLink>
-                </FooterContainer>
+                    <FooterContainer>
+                        <FooterLink href="#">
+                            <i className="fab fa-facebook">
+                                <span
+                                    style={{
+                                        marginLeft: "10px",
+                                        fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif",
+                                        fontWeight: '400',
+                                        WebkitFontSmoothing: 'antialased',
+                                        MozOsxFontSmoothing: 'grayscale'
+                                    }}
+                                >
+                                </span>
+                            </i>
+                        </FooterLink>
+                        <FooterLink href="#">
+                            <i className="fab fa-instagram">
+                                <span
+                                    style={{
+                                        marginLeft: "10px",
+                                        fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif",
+                                        fontWeight: '400',
+                                        WebkitFontSmoothing: 'antialased',
+                                        MozOsxFontSmoothing: 'grayscale'
+                                    }}
+                                >
+                                </span>
+                            </i>
+                        </FooterLink>
+                        {/* <FooterLink href="#">
+                        <i className="fa-solid fa-at">
+                                <span
+                                    style={{
+                                        marginLeft: "10px",
+                                        fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif",
+                                        fontWeight: '400',
+                                        WebkitFontSmoothing: 'antialased',
+                                        MozOsxFontSmoothing: 'grayscale'
+                                    }}
+                                >
+                                    Email
+                                </span>
+                            </i>
+                        </FooterLink> */}
+                    </FooterContainer>
             </Box>
         // </div>
 
