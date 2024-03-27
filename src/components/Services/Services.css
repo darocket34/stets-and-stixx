@@ -1,0 +1,36 @@
+div.services.master {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+div.services.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+}
+
+div.service.desc {
+    display: flex;
+    border: 1px solid #e1ba66;
+}
+
+p.service.desc {
+    padding-left: 30px;
+    padding-right: 30px;
+    border-right: 1px solid #e1ba66;
+}
+
+ul.service.details {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+ul {
+    list-style: none;
+}
+
+li.centerlist {
+    text-align: center;
+}
